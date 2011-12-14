@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+
+
+<PropertyList>
+	<path>right-console.ac</path>
+	<texture-path>f-22-right-console.png</texture-path>	
+	<texture-path>right-front-console.png</texture-path>	
+
+		<animation>
+		<type>rotate</type>
+		<object-name>stick</object-name>
+		<property>controls/flight/elevator</property>
+		<factor>18</factor>
+		<center>
+			<x-m>-5.54747</x-m>
+			<y-m>0.344072</y-m>
+			<z-m>-0.220032</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>stick</object-name>
+		<property>controls/flight/aileron</property>
+		<factor>20</factor>
+		<center>
+			<x-m>-5.54747</x-m>
+			<y-m>0.344072</y-m>
+			<z-m>-0.220032</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+
+	<animation>
+		<object-name>stick</object-name>
+		<type>noshadow</type>
+	</animation>
+
+
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>35</max-m>
+	</animation> 
+	
+
+</PropertyList>

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+
+
+<PropertyList>
+	<path>left-console.ac</path>
+	<texture-path>f-22-left-console.png</texture-path>
+	<texture-path>left-front-console.png</texture-path>
+	
+	<animation>
+<type>material</type> 
+		<object-name>left-console</object-name>
+		<object-name>throttle</object-name>
+		<object-name>left-front-console</object-name>
+</animation>
+
+
+		<animation> 
+		<object-name>throttle</object-name>
+		<type>rotate</type>
+		<property>controls/engines/engine[0]/throttle</property> 
+			<interpolation>
+			<entry><ind>0</ind><dep>-5</dep></entry>
+			<entry><ind>0.076</ind><dep>0</dep></entry>
+			<entry><ind>0.8</ind><dep>23.2</dep></entry>
+			<entry><ind>1</ind><dep>47</dep></entry>
+		</interpolation>
+		<center>
+			<x-m>-5.52707</x-m>
+			<y-m>-0.315527</y-m>
+			<z-m>-0.198435</z-m>
+		</center>
+		<axis> 
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<!--<animation>
+		<object-name>flap-handle</object-name>
+		<type>rotate</type>
+	<property>surface-positions/flap-pos-norm</property> 
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-22</dep></entry>
+		</interpolation>
+		<center>
+			<x-m>0.00829593</x-m>
+			<y-m>-0.0578684</y-m>
+			<z-m>-0.0428012</z-m>
+		</center>
+		<axis> 
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation> -->
+	
+
+
+
+	<!-- lighting -->
+
+		
+	
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>35</max-m>
+	</animation> 
+	
+</PropertyList>

@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+	<!--
+		=========================================
+	  AeroFab - 2010 - Lockheed-Martin-FA-22A-Raptor Project
+	 =========================================
+		   http://aerofab.webnode.pt/
+
+		   Creation :	April 15, 2010 06:33:00 PM
+		   Last update: November 10, 2010 07:41:02 PM
+
+		   Revisions :
+						* October 1, 2010 04:27:45 PM
+						* November 10, 2010 07:41:02 PM ()
+		   ======================================================================
+		   Contributions :
+		   Fabrizio Fracaroli <fabriziofracaroli@hotmail.com >
+		   ======================================================================
+	/*
+	* Copyright (c) 2010  Fabrizio Fracaroli <fabriziofracaroli@hotmail.com >
+	*
+	*  This file is free software: you may copy, redistribute and/or modify it
+	*  under the terms of the GNU General Public License as published by the
+	*  Free Software Foundation, either version 2 of the License.
+	*
+	*  This file is distributed in the hope that it will be useful, but
+	*  WITHOUT ANY WARRANTY; without even the implied warranty of
+	*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+	*  General Public License for more details.
+	*
+	*  You should have received a copy of the GNU General Public License
+	*  along with this program.  If not, see http://www.gnu.org/licenses/ .
+	*
+	* This file incorporates work covered by the following copyright and
+	* permission notice:
+	*
+	* Copyright 2010, Fabrizio Fracaroli <fabriziofracaroli@hotmail.com >
+	*
+	* Permission to use, copy, modify, and/or distribute this software
+	* for any purpose with or without fee is hereby granted, provided
+	* that the above copyright notice and this permission notice appear
+	* in all copies.
+
+	* THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+	* WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+	* WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+	* AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR
+	* CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
+	* OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+	* NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+	* CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+	*/
+
+	======================================================================
+	Reference :
+	   http://en.wikipedia.org/wiki/ -->
+	<PropertyList>
+		<sim>
+			<description>f22-jsbsim</description>
+			<author>Fabrizio Fracaroli</author>
+			<status>alpha</status>
+
+			<flight-model>jsb</flight-model>
+			<aero>f22-jsbsim</aero>
+			<fuel-fraction>0.1</fuel-fraction>
+
+	<!--		<systems>
+				<autopilot>
+					<path>Aircraft/Lockheed-Martin-FA-22A-Raptor/F-22-AFCS.xml</path>
+				</autopilot>
+			</systems> -->
+
+		<startup>
+			<splash-texture>Aircraft/Lockheed-Martin-FA-22A-Raptor/F-22-splash.png</splash-texture>
+		</startup>
+
+			<gui>
+				<style>
+				<colors>
+					<splash-screen>
+						<red>0.57</red>
+						<green>0.60</green>
+						<blue>0.60</blue>
+					</splash-screen>
+				</colors>
+				</style>
+			</gui>
+
+			<sound>
+				<path>Aircraft/Lockheed-Martin-FA-22A-Raptor/F-22-sound.xml</path>
+			</sound>
+
+			<help>
+				<title>F-22</title>
+				<key>
+					<name>Home</name>
+					<desc>Increase elevator trim</desc>
+				</key>
+				<key>
+					<name>End</name>
+					<desc>Decrease elevator trim</desc>
+				</key>
+
+				<key>
+					<name>]</name>
+					<desc>Lower flaps</desc>
+				</key>
+				<key>
+					<name>[</name>
+					<desc>Raise flaps</desc>
+				</key>
+				
+				<key>
+					<name>B</name>
+					<desc>Brakes</desc>
+				</key>
+				<key>
+					<name>g</name>
+					<desc>landing gear UP</desc>
+				</key>
+				<key>
+					<name>G</name>
+					<desc>landing gear DOWN</desc>
+				</key>
+				
+				<key>
+					<name>ctrl+b</name>
+					<desc>toggle speed brakes</desc>
+				</key>
+
+	
+	<line>FUEL: First time you fly the F-22 Raptor, the tanks have a 10 percent level. Be sure you fill all tanks starting from forward to after</line>
+	<line>Take off:</line>
+	<line>Release the park brake and set the throttle  around 20 percent RPM and raise flaps one time</line>
+	<line>Rotate at around 20 knots and align with the runway, and then full throttle</line>	
+	<line>rotate at  around 180 knots and  pull back the stick </line>
+	<line>keep a reasonable pitch</line>
+	<line>Be carefull with the afterburner, because the vectors will lift the F22's nose very much</line>
+	<line>The vectors are controled by the yoke</line>
+	<line>Landing:</line>
+	<line>Reduce speed around 250 knots and set full flaps landing gear down</line>
+	<line>AOA minus 10 degrees</line>
+	<line>Final approach speed 160 knots</line>
+	<line>Touch at 150 knots AOA  +10 degrees </line>
+	<line>Press "b" to brakes and </line>
+	<line>Have fun</line>
+
+			</help>
+
+<!--	<hud>
+	<path n="1"><path>Aircraft/Lockheed-Martin-FA-22A-Raptor/Hud/F-22-hud.xml</path>
+	<visibility n="1">false</visibility>
+	<palette>
+		<color n="0">
+			<alpha type="float">1</alpha>
+			<antialiased type="bool">true</antialiased>
+			<brightness type="float">1</brightness>
+			<transparent type="bool">true</transparent>
+			<red type="float">0.38</red>
+			<green type="float">1.0</green>
+			<blue type="float">0.22</blue>
+		</color>
+		<color n="1">
+			<alpha type="float">1</alpha>
+			<antialiased type="bool">true</antialiased>
+			<brightness type="float">1</brightness>
+			<transparent type="bool">true</transparent>
+			<red type="float">1.0</red>
+			<green type="float">0.2</green>
+			<blue type="float">0.0</blue>
+		</color>
+	</palette>
+	<clipping>
+		<left type="double">-80</left>
+		<right type="double">80</right>
+		<top type="double">30</top>
+		<bottom type="double">-130</bottom>
+	</clipping>
+</hud> -->
+
+	<model>
+		<path>Aircraft/Lockheed-Martin-FA-22A-Raptor/Models/F-22-JSBSIM-Model-File.xml</path>
+	<livery>
+		<name type="string">x5</name>
+		<texture>x5.png</texture>
+	</livery>
+
+	<F-22>
+		<controls>
+		<lighting>
+		<anti-collision-switch type="bool">true</anti-collision-switch>
+		<hook-bypass type="bool">false</hook-bypass><!-- false = carrier -->
+		<index-norm type="double">1</index-norm>
+		<position-tail-switch type="int">1</position-tail-switch>
+		<position-wing-switch type="int">1</position-wing-switch>
+		<position-flash-switch type="bool">true</position-flash-switch>
+		</lighting>
+		<VDI>
+		<brightness type="double">1</brightness>
+		<contrast type="double">0.6</contrast>
+		<on-off type="bool">0</on-off>
+		</VDI>
+		<steer>
+		<tacan-bt type="bool">true</tacan-bt><!-- 3 -->
+		</steer>
+		</controls>
+
+		<fx>
+		<burner type="int">0</burner>
+		<heat-blur-on type="bool">false</heat-blur-on>
+		</fx>
+		
+<instrumentation>
+		<path>Aircraft/Lockheed-Martin-FA-22A-Raptor/Systems/instrumentation.xml</path>
+<!--		<path>Aircraft/Lockheed-Martin-FA-22A-Raptor/Systems/radar.xml</path>   -->
+
+
+
+		<fuel-gauges>
+		<total type="double">100</total>
+		</fuel-gauges>
+
+		<g-meter>
+		<g-max archive="y" type="double">1</g-max>
+		<g-min archive="y" type="double">1</g-min>
+		</g-meter>
+		<radar-altimeter>
+		<limit-bug type="double">250</limit-bug>
+		</radar-altimeter>
+
+		<aoa-indexer>
+		<!-- target = 11.3 deg AoA -->
+		<too-slow-deg>13.7</too-slow-deg>	<!-- target +2.4 deg -->
+		<slow-deg>12.1</slow-deg>			<!-- target +0.8 deg -->
+		<target-deg>11.3</target-deg>		<!-- target -->
+		<fast-deg>10.5</fast-deg>			<!-- target -0.8 deg -->
+		<too-fast-deg>8.9</too-fast-deg>	<!-- target -2.4 deg -->
+		</aoa-indexer>
+
+		<warnings>
+		<master-caution type="bool">0</master-caution>
+		</warnings>
+		</instrumentation>
+
+		<lighting>
+			<position-wing-factor type="int">0</position-wing-factor>
+			<position-tail-factor type="int">0</position-tail-factor>
+		</lighting>
+
+		<systems>
+		</systems>
+			
+			<wings>
+				<left-wing-torn type="bool">false</left-wing-torn>
+				<right-wing-torn type="bool">false</right-wing-torn>
+			</wings>
+		</F-22>
+	</model>
+
+	<multiplay>
+		<chat_display>1</chat_display>
+			<generic>
+				<int type="int">0</int>
+					<int type="int">0</int>
+						<int type="int">0</int>
+							<int type="int">0</int>
+								<int type="int">0</int>
+							<int type="int">0</int>
+						<int type="bool">0</int>
+					<int type="int">0</int>
+		</generic>
+	</multiplay>
+
+			<rendering>
+				<redout>
+					<parameters>
+						<blackout-complete-g>7.0</blackout-complete-g>
+						<blackout-onset-g>5.5</blackout-onset-g>
+					</parameters>
+				</redout>
+			</rendering>
+			
+	<flaps>
+		<setting>0.00</setting>
+		<setting>0.50</setting>
+		<setting>1.00</setting>
+	</flaps>
+
+	<menubar>
+		<default>
+			<menu n="50">
+				<label>F-22</label>
+					<item n="0">
+					<label>Select Livery</label>
+					<binding>
+						<command>nasal</command>
+						<script>aircraft.livery.dialog.toggle()</script>
+					</binding>
+				</item>
+	
+			</menu>
+		</default>
+	</menubar>
+
+			<view n="0">
+	<name>Cockpit View</name>
+	<type>lookfrom</type>
+	<internal archive="y">true</internal>
+	<config>
+		<pitch-offset-deg>-4.0</pitch-offset-deg>
+		<x-offset-m archive="y">-0.0698712</x-offset-m><!--  direita/esquerda/de z para x   -->
+		<y-offset-m archive="y">0.200433</y-offset-m><!-- cima/baixo/de y para y   -->
+		<z-offset-m archive="y">-5.05473</z-offset-m><!--  frente/atraz/de x para z  -->
+		<pitch-offset-deg>-5</pitch-offset-deg>		
+
+	</config>
+	</view>
+
+	<view n="100">
+	<name>Instuments view</name>
+	<type>lookfrom</type>
+	<internal type="bool">false</internal>
+	<config>
+	<from-model type="bool">true</from-model>
+	<from-model-idx type="int">0</from-model-idx>
+	<ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+	<x-offset-m archive="y">0.0134498</x-offset-m> <!--  direita/esquerda/de z para x   -->
+	<y-offset-m archive="y">2.60718</y-offset-m>  <!-- cima/baixo/de y para y   -->
+	<z-offset-m archive="y">-2.17587</z-offset-m> <!--  frente/atraz/de x para z  -->
+	<pitch-offset-deg>0</pitch-offset-deg>
+	<heading-offset-deg>80</heading-offset-deg>
+	<default-field-of-view-deg>57</default-field-of-view-deg>
+	<limits>
+	<enabled type="bool">true</enabled>
+	<left>
+	<heading-max-deg type="double">360</heading-max-deg>
+	<x-offset-max-m type="double">0.25</x-offset-max-m>
+	<x-offset-threshold-deg type="double">45</x-offset-threshold-deg>
+	</left>
+	<right>
+	<heading-max-deg type="double">360</heading-max-deg>
+	<x-offset-max-m type="double">0.25</x-offset-max-m>
+	<x-offset-threshold-deg type="double">45</x-offset-threshold-deg>
+	</right>
+	</limits>
+	</config>
+	</view>
+
+			<view n="1">
+				<config>
+					<target-z-offset-m archive="y" type="double">0</target-z-offset-m>
+					<pitch-offset-deg>0</pitch-offset-deg>
+				</config>
+			</view>
+
+			<view n="2">
+				<config>
+					<y-offset-m archive="y" type="double">6.0</y-offset-m>
+					<z-offset-m archive="y">-19.7</z-offset-m>
+					<target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+				</config>
+			</view>
+
+			<view n="3">
+				<config>
+					<target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+				</config>
+			</view>
+
+			<view n="4">
+				<config>
+					<target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+				</config>
+			</view>
+
+			<view n="5">
+				<config>
+					<target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+				</config>
+			</view>
+
+			<view n="6">
+				<config>
+					<target-z-offset-m archive="y" type="double">0.0</target-z-offset-m>
+				</config>
+			</view>
+
+		</sim>
+
+		<systems>
+			<electrical>
+				<path>Aircraft/Lockheed-Martin-FA-22A-Raptor/Systems/F-22-electrical.xml</path>
+			</electrical>
+
+			<refuel>
+				<type>probe</type>
+			</refuel>
+		</systems>
+
+		<consumables>
+			<fuel>
+				<tank n="0">
+					<name>FWD fuselage</name>
+					<kill-when-empty type="bool">false</kill-when-empty>
+				</tank>
+				<tank n="1">
+					<name>AFT fuselage</name>
+					<kill-when-empty type="bool">false</kill-when-empty>
+				</tank>
+
+				<tank n="2">
+					<name>L wing</name>
+					<kill-when-empty type="bool">false</kill-when-empty>
+				</tank>
+				<tank n="3">
+					<name>R wing</name>
+					<kill-when-empty type="bool">false</kill-when-empty>
+				</tank>
+				</fuel>
+		</consumables>
+
+		<controls>
+			<lighting>
+				<instruments-norm type="double">0</instruments-norm>
+				<panel-norm type="double">0</panel-norm>
+				<strobe type="bool">false</strobe>
+				<nav-lights type="bool">true</nav-lights>
+			</lighting>
+
+			<gear>
+				<!-- Start with the Parking Brake on -->
+				<brake-parking type="double">1.0</brake-parking>
+			</gear>
+		</controls>
+
+		<engines>
+		<engine n="0">
+		<running>true</running>
+		</engine>
+		<engine n="1">
+		<running>true</running>
+		</engine>
+		</engines>
+
+		<input>
+		
+	<!--	
+	<keyboard n="0" include="../../Input/Keyboard/carrier-bindings.xml">
+	</keyboard> -->
+		</input>
+
+	<instrumentation>
+		<tacan>
+			<switch-position type="int">1</switch-position>
+		</tacan>
+		<nav>
+			<frequencies>
+				<selected-freq type="double">115.8</selected-freq>
+				<standby-freq type="double">115.8</standby-freq>
+			</frequencies>
+		</nav>
+		</instrumentation>
+
+	<nasal>
+		<F-22>
+			<file>Aircraft/Lockheed-Martin-FA-22A-Raptor/Nasal/Liveries.nas</file>
+		</F-22>
+	</nasal>
+
+	</PropertyList>

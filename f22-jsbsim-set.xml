@@ -307,8 +307,8 @@
 	<internal archive="y">true</internal>
 	<config>
 		<pitch-offset-deg>-4.0</pitch-offset-deg>
-		<x-offset-m archive="y">-0.0698712</x-offset-m><!--  direita/esquerda/de z para x   -->
-		<y-offset-m archive="y">0.200433</y-offset-m><!-- cima/baixo/de y para y   -->
+		<x-offset-m archive="y">0.0</x-offset-m><!--  direita/esquerda/de z para x   -->
+		<y-offset-m archive="y">0.47</y-offset-m><!-- cima/baixo/de y para y   -->
 		<z-offset-m archive="y">-5.05473</z-offset-m><!--  frente/atraz/de x para z  -->
 		<pitch-offset-deg>-5</pitch-offset-deg>		
 

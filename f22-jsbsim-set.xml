@@ -63,6 +63,7 @@
 			<aero>f22-jsbsim</aero>
 			<fuel-fraction>0.1</fuel-fraction>
 
+			<variant-of>f22-yasim</variant-of>
 	<!--		<systems>
 				<autopilot>
 					<path>Aircraft/Lockheed-Martin-FA-22A-Raptor/F-22-AFCS.xml</path>
@@ -108,7 +109,7 @@
 					<name>[</name>
 					<desc>Raise flaps</desc>
 				</key>
-				
+
 				<key>
 					<name>B</name>
 					<desc>Brakes</desc>
@@ -121,17 +122,17 @@
 					<name>G</name>
 					<desc>landing gear DOWN</desc>
 				</key>
-				
+
 				<key>
 					<name>ctrl+b</name>
 					<desc>toggle speed brakes</desc>
 				</key>
 
-	
+
 	<line>FUEL: First time you fly the F-22 Raptor, the tanks have a 10 percent level. Be sure you fill all tanks starting from forward to after</line>
 	<line>Take off:</line>
 	<line>Release the park brake and set the throttle  around 20 percent RPM and raise flaps one time</line>
-	<line>Rotate at around 20 knots and align with the runway, and then full throttle</line>	
+	<line>Rotate at around 20 knots and align with the runway, and then full throttle</line>
 	<line>rotate at  around 180 knots and  pull back the stick </line>
 	<line>keep a reasonable pitch</line>
 	<line>Be carefull with the afterburner, because the vectors will lift the F22's nose very much</line>
@@ -208,7 +209,7 @@
 		<burner type="int">0</burner>
 		<heat-blur-on type="bool">false</heat-blur-on>
 		</fx>
-		
+
 <instrumentation>
 		<path>Aircraft/Lockheed-Martin-FA-22A-Raptor/Systems/instrumentation.xml</path>
 <!--		<path>Aircraft/Lockheed-Martin-FA-22A-Raptor/Systems/radar.xml</path>   -->
@@ -248,7 +249,7 @@
 
 		<systems>
 		</systems>
-			
+
 			<wings>
 				<left-wing-torn type="bool">false</left-wing-torn>
 				<right-wing-torn type="bool">false</right-wing-torn>
@@ -278,7 +279,7 @@
 					</parameters>
 				</redout>
 			</rendering>
-			
+
 	<flaps>
 		<setting>0.00</setting>
 		<setting>0.50</setting>
@@ -296,7 +297,7 @@
 						<script>aircraft.livery.dialog.toggle()</script>
 					</binding>
 				</item>
-	
+
 			</menu>
 		</default>
 	</menubar>
@@ -310,7 +311,7 @@
 		<x-offset-m archive="y">0.0</x-offset-m><!--  direita/esquerda/de z para x   -->
 		<y-offset-m archive="y">0.47</y-offset-m><!-- cima/baixo/de y para y   -->
 		<z-offset-m archive="y">-5.05473</z-offset-m><!--  frente/atraz/de x para z  -->
-		<pitch-offset-deg>-5</pitch-offset-deg>		
+		<pitch-offset-deg>-5</pitch-offset-deg>
 
 	</config>
 	</view>
@@ -442,8 +443,8 @@
 		</engines>
 
 		<input>
-		
-	<!--	
+
+	<!--
 	<keyboard n="0" include="../../Input/Keyboard/carrier-bindings.xml">
 	</keyboard> -->
 		</input>
